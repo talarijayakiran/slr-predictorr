@@ -16,7 +16,7 @@ class InputData(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the CO2 Prediction API 🚗"}
+    return {"message": "Hello, world! Deployed via GitHub Actions 🚀"}
 
 @app.post("/predict")
 def predict(data: InputData):

@@ -12,7 +12,7 @@ app = FastAPI()
 
 # Define the input schema
 class InputData(BaseModel):
-    ENGINESIZE: float
+    TJK_ENGINESIZE: float
 
 @app.get("/")
 def read_root():
@@ -31,5 +31,5 @@ def predict(data: InputData):
 
 
     # Return a valid JSON response
-    return {"prediction": result}
+    return {"TJK_ML_Prediction": result}
 

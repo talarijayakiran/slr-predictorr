@@ -24,10 +24,10 @@ def predict(data: InputData):
     input_df = pd.DataFrame([data.dict()])
 
     # Make prediction
-    prediction = model.predict(input_df)
+    TJK_prediction = model.predict(input_df)
 
     # Convert NumPy type to regular float
-    result = float(prediction[0])
+    result = float(TJK_prediction[0])
 
 
     # Return a valid JSON response

@@ -11,4 +11,4 @@ def predict(input_data):
 if __name__ == "__main__":
     sample = {"ENGINESIZE": 2.5}
     result = predict(sample)
-    print("TJK Predicted CO2 Emission:", result)
+    print("TJK_Predicted CO2 Emission:", result)
